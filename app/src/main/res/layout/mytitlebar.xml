@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:id = "@+id/re_title"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background=""
+                android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_marginLeft="10dp"
+            android:id="@+id/bt_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back"/>
+        <ImageButton
+            android:scaleType="fitXY"
+            android:layout_onRightof="10dp"
+            android:id="@+id/info"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/friends"
+            android:background=""
+            android:layout_alignParentBottom="true" android:layout_toStartOf="@+id/mytitle"
+            android:layout_marginEnd="18dp"/>
+
+        <TextView
+                android:text = "标题"
+        android:id="@+id/mytitle"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="50dp"
+        android:gravity="center" />
+
+</RelativeLayout>
